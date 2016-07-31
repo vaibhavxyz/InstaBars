@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationBars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FfZ-oc-SGa" customClass="InstaBars" customModule="AnimationBars" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2U0-nK-pUN"/>
+                                    <constraint firstAttribute="width" constant="35" id="SZN-LR-q8t"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2U0-nK-pUN"/>
+                                        <exclude reference="SZN-LR-q8t"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="2U0-nK-pUN"/>
+                                        <include reference="SZN-LR-q8t"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhK-ZZ-LME">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="InstaBars">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equaliser bars inspired by the video animation in instagram application" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkA-Wj-5jQ">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vaibhavxyz@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPd-aG-A09">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mhK-ZZ-LME" secondAttribute="trailing" constant="20" id="0wq-Tp-6Vh"/>
+                            <constraint firstItem="mhK-ZZ-LME" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="3Lc-gR-vO7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tPd-aG-A09" secondAttribute="trailing" constant="20" id="6zK-ia-uad"/>
+                            <constraint firstItem="tPd-aG-A09" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="AOn-t8-4Z6"/>
+                            <constraint firstItem="FfZ-oc-SGa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I4r-wi-cgu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pkA-Wj-5jQ" secondAttribute="trailing" constant="-10" id="VGr-5D-kFV"/>
+                            <constraint firstItem="mhK-ZZ-LME" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="ZEH-jI-D6H"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tPd-aG-A09" secondAttribute="bottom" constant="20" id="bb0-oi-3sk"/>
+                            <constraint firstItem="pkA-Wj-5jQ" firstAttribute="top" secondItem="mhK-ZZ-LME" secondAttribute="bottom" constant="15" id="joW-82-Dxv"/>
+                            <constraint firstItem="FfZ-oc-SGa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kmm-uI-0mq"/>
+                            <constraint firstItem="pkA-Wj-5jQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="tIg-2r-dmB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FfZ-oc-SGa"/>
+                                <exclude reference="mhK-ZZ-LME"/>
+                                <exclude reference="pkA-Wj-5jQ"/>
+                                <exclude reference="tPd-aG-A09"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0wq-Tp-6Vh"/>
+                                <exclude reference="3Lc-gR-vO7"/>
+                                <exclude reference="ZEH-jI-D6H"/>
+                                <exclude reference="VGr-5D-kFV"/>
+                                <exclude reference="joW-82-Dxv"/>
+                                <exclude reference="tIg-2r-dmB"/>
+                                <exclude reference="I4r-wi-cgu"/>
+                                <exclude reference="kmm-uI-0mq"/>
+                                <exclude reference="6zK-ia-uad"/>
+                                <exclude reference="AOn-t8-4Z6"/>
+                                <exclude reference="bb0-oi-3sk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="FfZ-oc-SGa"/>
+                                <include reference="mhK-ZZ-LME"/>
+                                <include reference="pkA-Wj-5jQ"/>
+                                <include reference="tPd-aG-A09"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0wq-Tp-6Vh"/>
+                                <include reference="3Lc-gR-vO7"/>
+                                <include reference="ZEH-jI-D6H"/>
+                                <include reference="VGr-5D-kFV"/>
+                                <include reference="joW-82-Dxv"/>
+                                <include reference="tIg-2r-dmB"/>
+                                <include reference="I4r-wi-cgu"/>
+                                <include reference="kmm-uI-0mq"/>
+                                <include reference="6zK-ia-uad"/>
+                                <include reference="AOn-t8-4Z6"/>
+                                <include reference="bb0-oi-3sk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505.5" y="286.5"/>
+        </scene>
+    </scenes>
+</document>
